@@ -156,11 +156,13 @@ ul {
 }
 .cherries {
   background-image: url("./images/desktop/image-graphic-design.jpg");
+  color: var(--Darkdesaturatedcyan);
   width: 100%;
 }
 .tangerine {
   background-image: url("./images/desktop/image-photography.jpg");
   width: 100%;
+  color: var(--Darkblue);
 }
 .text {
   /* top right botom left */
@@ -394,7 +396,7 @@ ul {
     text-align: center;
   }
   #top1 {
-    margin: 120px 0px 0px 0px;
+    margin: 140px 0px 0px 0px;
     width: 100%;
   }
   #arr {
@@ -465,6 +467,12 @@ ul {
     display: flex;
     flex-direction: column-reverse;
     width: 50%;
+  }
+  #pic {
+    height: 150px;
+  }
+  #pic2 {
+    height: 150px;
   }
   .section7 {
     position: relative;
