@@ -118,25 +118,48 @@ header a {
   color: black;
   font-family: "Fraunces", serif;
   letter-spacing: 1px;
+  cursor: pointer;
 }
-#learn:hover {
+/* #learn:hover {
   text-decoration-line: underline;
   border-radius: 2px;
-}
+} */
 
 #learn1 {
   color: black;
   font-family: "Fraunces", serif;
   letter-spacing: 1px;
+  cursor: pointer;
 }
-#learn1:hover {
-  text-decoration-line: underline;
-  text-decoration-color: hsl(51, 100%, 49%);
+.section2 hr {
+  width: 0;
+  border: 7px solid var(--Yellow);
+  border-radius: 66px;
+  position: relative;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+  transition: 1s;
+  visibility: hidden;
 }
-
 .section3 {
   display: flex;
 }
+.section3 hr {
+  /* width: 30%; */
+  border: 7px solid var(--Softred);
+  border-radius: 66px;
+  position: relative;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+  width: 0;
+  transition: 1s;
+  visibility: hidden;
+}
+/* .section3 hr.active {
+  visibility: visible;
+} */
 .pinkcup {
   width: 50%;
   background: url("./images/desktop/image-stand-out.jpg");

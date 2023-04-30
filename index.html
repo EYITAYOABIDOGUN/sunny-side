@@ -68,7 +68,8 @@
           grow fast. Engage your clients through compelling visuals that do most
           of the marketing for you.
         </p>
-        <a href="#" id="learn"> LEARN MORE </a>
+        <h4 id="learn" class="lin" onclick="line1()" > LEARN MORE </h4>
+        <hr class="l2">
       </div>
       <div class="egg">
       </div>
@@ -86,7 +87,8 @@
           photographers, videographers, and copywriters, we’ll build and extend
           your brand in digital places.
         </p>
-        <a href="#" id="learn1"> LEARN MORE </a>
+        <h4 id="learn1" class="lin" onclick="line()"> LEARN MORE </h4>
+        <hr class="l1">
       </div>
     </section>
     <section class="section4">
@@ -214,6 +216,29 @@
         toggleMenu.classList.toggle("active");
         navigation.classList.toggle("active");
       }
+      function line(){
+        const line = document.querySelector(".lin")
+        const dis = document.querySelector(".l1")
+      dis.style.visibility="visible"
+      dis.style.width="30%";
+
+      }
+      function line1(){
+         const dis1= document.querySelector(".l2")
+      dis1.style.visibility="visible"
+      dis1.style.width="30%";
+      }
+    function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.body.style.backgroundColor = "yellow";
+  } else {
+   document.body.style.backgroundColor = "pink";
+  }
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction)
     </script>
   </body>
 </html>

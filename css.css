@@ -162,6 +162,9 @@
   #egg1 {
     width: 100%;
   }
+  .section2 hr {
+    margin-left: 20px;
+  }
 
   .text1 {
     padding: 100px;
