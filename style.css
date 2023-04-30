@@ -65,7 +65,7 @@ header a {
 #top1 {
   text-align: center;
   width: 100%;
-  margin: 143px 0;
+  margin-top: 90px;
   display: flex;
   flex-direction: column;
 }
@@ -100,10 +100,12 @@ header a {
 .text1 {
   width: 50%;
   padding: 138px;
+  /* background-color: white; */
 }
 .text2 {
   width: 50%;
   padding: 138px;
+  /* background-color: white; */
 }
 
 #head {
@@ -120,10 +122,6 @@ header a {
   letter-spacing: 1px;
   cursor: pointer;
 }
-/* #learn:hover {
-  text-decoration-line: underline;
-  border-radius: 2px;
-} */
 
 #learn1 {
   color: black;
@@ -137,29 +135,30 @@ header a {
   border-radius: 66px;
   position: relative;
   top: -10px;
-  left: -10px;
+  left: -15px;
   z-index: -1;
   transition: 1s;
   visibility: hidden;
+}
+span {
+  width: 32%;
+  display: inline-block;
 }
 .section3 {
   display: flex;
 }
 .section3 hr {
-  /* width: 30%; */
   border: 7px solid var(--Softred);
   border-radius: 66px;
   position: relative;
   top: -10px;
-  left: -10px;
+  left: -15px;
   z-index: -1;
   width: 0;
   transition: 1s;
   visibility: hidden;
 }
-/* .section3 hr.active {
-  visibility: visible;
-} */
+
 .pinkcup {
   width: 50%;
   background: url("./images/desktop/image-stand-out.jpg");
@@ -192,6 +191,7 @@ header a {
   justify-content: flex-end;
   margin-left: 100px;
   margin-right: 100px;
+  background-color: rgba(255, 255, 255, 0);
 }
 #p1 {
   text-align: center;
@@ -256,8 +256,7 @@ header a {
 }
 .section6 {
   display: flex;
-  /* position: relative;
-  top: -4px; */
+  background-color: white;
 
   width: 100%;
 }

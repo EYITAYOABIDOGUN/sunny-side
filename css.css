@@ -162,10 +162,17 @@
   #egg1 {
     width: 100%;
   }
-  .section2 hr {
-    margin-left: 20px;
+  span {
+    width: 100%;
+    text-align: center;
+    padding: 0 41px;
   }
-
+  .section3 hr {
+    left: 0;
+  }
+  .section2 hr {
+    left: 0;
+  }
   .text1 {
     padding: 100px;
     width: 100%;
