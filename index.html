@@ -17,9 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link rel="icon" href="./images/favicon-32x32.png" />
     <title>Sunny side landing page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css.css" />
   </head>
   <body>
     <section class="section1">
@@ -27,27 +28,21 @@
         <div class="logo">
           <img src="./images/logo.svg" alt="sunnyside" />
         </div>
-
-        <div class="menu">
-          <ul>
+      <header>
+      <div class="toggleMenu" onclick="menuToggle();">
+</div>
+   
+          <ul class="navigation">
             <li><a href="#" class="a">About </a></li>
             <li><a href="#" class="a"> Services</a></li>
             <li><a href="#" class="a">Projects</a></li>
             <li><a href="#" class="b"> CONTACT</a></li>
           </ul>
-        </div>
-        <div class="dropdown">
-          <div class="ham">
-            <img src="./images/icon-hamburger.svg" alt="" />
-          </div>
-          <div class="dropdown-content">
-            <ul>
-              <li><a href="#" id="an">About </a></li>
-              <li><a href="#" id="an"> Services</a></li>
-              <li><a href="#" id="an">Projects</a></li>
-              <li><a href="#" id="bn"> CONTACT</a></li>
-            </ul>
-          </div>
+     </header>
+
+     
+
+      
         </div>
         <div id="top1">
           <div class="top">
@@ -57,17 +52,16 @@
             <img src="./images/icon-arrow-down.svg" alt="" id="arr" />
           </div>
         </div>
-      </div>
-      <div class="hi">
-        <img src="./images/desktop/image-header.jpg" id="blue" />
-      </div>
+
+    </section>
+ <div class="hi">
+        <img src="./images/desktop/image-header.jpg" id="blue"  />
+      </div>     
       <div class="hello">
         <img src="./images/mobile/image-header.jpg" id="blu" />
       </div>
-    </section>
-
-    <section class="section2">
-      <div class="text1">
+    <section class="section2">      <img src="./images/mobile/image-transform.jpg" alt="" id="egg1">
+      <div class="text2">
         <h1 id="head">Transform your brand</h1>
         <p id="middle">
           We are a full-service creative agency specializing in helping brands
@@ -77,13 +71,14 @@
         <a href="#" id="learn"> LEARN MORE </a>
       </div>
       <div class="egg">
-        <img src="./images/desktop/image-transform.jpg" alt="" id="img" />
       </div>
+
     </section>
     <section class="section3">
       <div class="pinkcup">
-        <img src="./images/desktop/image-stand-out.jpg" alt="" id="img" />
-      </div>
+  
+      </div>    
+        <img src="./images/mobile/image-stand-out.jpg" alt="" id="pink1" />
       <div class="text1">
         <h1 id="head">Stand out to the right audience</h1>
         <p id="middle">
@@ -212,5 +207,13 @@
         <i class="fa-brands fa-xl fa-pinterest" class="face"></i>
       </div>
     </section>
+    <script type="text/javascript">
+        function menuToggle() {
+        const toggleMenu = document.querySelector(".toggleMenu");
+        const navigation = document.querySelector(".navigation");
+        toggleMenu.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
